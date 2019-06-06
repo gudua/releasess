@@ -1,0 +1,228 @@
+\chapter{依赖关系}
+  
+   % <Explain the internal and external dependency for each requirement (if applicable). >
+  
+   
+  
+   % 解释每一条需求的内部和外部依赖关系。
+  
+   在线音乐播放：
+  
+   
+  
+   
+  
+   外部依赖：
+  
+            \begin{itemize}
+        
+            \item 用户完成登录
+        
+            \item 数据库正常运行
+        
+            \item 客户端与数据库的连接正常周转
+        
+            \item 动态网页实现了播放音乐资源文件的功能
+        
+        
+        
+        \end{itemize}
+  
+   
+  
+   
+  
+   内部依赖：
+  
+   实现了用户登录功能\\
+
+  
+   歌单管理:
+  
+   
+  
+   外部依赖：
+    
+    \begin{itemize}
+    
+    
+    
+        \item 用户完成登录
+    
+        \item 数据库正常运行
+    
+        \item 客户端与数据库的连接正常周转
+    
+        \item 用户通过鼠标点选进入了某一个歌单或者用户处于登录后的默认页面
+    
+    \end{itemize}
+  
+   
+  
+    内部依赖：
+    
+    实现了用户登录功能\\
+  
+   评价:
+  
+   
+  
+    外部依赖：
+    
+    \begin{itemize}
+    
+    
+    
+        \item 用户完成登录
+    
+        \item 数据库正常运行
+    
+        \item 客户端与数据库的连接正常周转
+    
+        \item 用户处于播放页面
+    
+    \end{itemize}
+  
+   
+    
+    内部依赖：
+    
+    实现了用户登录功能\\
+  
+   个性化推荐：
+  
+   
+    
+    外部依赖：
+    
+    \begin{itemize}
+    
+    
+    
+        \item 用户完成登录
+    
+        \item 数据库正常运行
+    
+        \item 客户端与数据库的连接正常周转
+    
+        \item 用户处于登录后的默认页面
+    
+        \item 数据库能够存储用户的历史评分信息
+    
+    \end{itemize}
+    
+        
+    
+    内部依赖：
+    
+        \begin{itemize}
+    
+        \item 实现了排行榜功能
+    
+        \item 实现了评价功能
+    
+        \item 实现了用户登录功能
+    
+    \end{itemize}
+
+
+   分享：
+  
+   
+    
+    外部依赖：
+    
+    \begin{itemize}
+    
+    
+    
+        \item 用户完成登录
+    
+        \item 数据库正常运行
+    
+        \item 客户端与数据库的连接正常周转
+    
+        \item 服务器数据库中存在多个用户
+    
+    \end{itemize}
+    
+        
+    
+    内部依赖：
+    
+        \begin{itemize}
+    
+        \item 实现了用户登录功能
+    
+        \item 实现了歌单管理功能
+    
+    \end{itemize}
+  
+   音乐购买/下载/上传：
+  
+   
+  
+   
+  
+    外部依赖：
+    
+    \begin{itemize}
+    
+    
+    
+        \item 用户完成登录
+    
+        \item 数据库正常运行
+    
+        \item 客户端与数据库的连接正常周转
+    
+        \item 服务器数据库中存在多个用户
+    
+    \end{itemize}
+    
+        
+    
+    内部依赖：    
+    
+        \begin{itemize}
+    
+        \item 实现了用户登录功能
+    
+        \item 实现了编辑用户信息、结算、查看购物车的功能
+    
+        \item 实现了管理员平台管理功能 
+    
+    \end{itemize}
+
+  
+   歌曲排行榜：
+  
+   
+  
+    外部依赖：
+    
+    \begin{itemize}
+    
+    
+    
+        \item 用户完成登录
+    
+        \item 数据库正常运行
+    
+        \item 客户端与数据库的连接正常周转
+    
+    \end{itemize}
+    
+        
+    
+    内部依赖：    
+    
+        \begin{itemize}
+    
+        \item 实现了用户登录功能
+    
+        \item 实现了评价功能
+    
+        \item 实现了歌单管理功能 
+    
+    \end{itemize}

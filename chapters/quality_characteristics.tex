@@ -1,0 +1,58 @@
+\chapter{软件质量特性}
+
+
+\section {适应性}
+\begin{itemize}
+	\item 产品的网页可以适配所有类型的浏览器。
+\end{itemize}
+
+\section {可用性}
+\begin{itemize}
+	\item 产品的网页客户端的UI应该简单明了且直观，提供尽可能简单的菜单，避免不必要的菜单的多层嵌套或者过多的菜单选项，以至使用方便快捷。
+\end{itemize}
+
+\section {正确性}
+\begin{itemize}
+	\item 产品的服务器端要对客户端的请求使用数据包校验和用户信息的对比，拒接非法请求。
+	\item 产品的客户端在做出对用户账户的获取和变动之前，应与服务器通信对比用户凭据是否有效
+\end{itemize}
+
+\section {灵活性}
+\begin{itemize}
+	\item 产品的客户端应减少各个模块间的依赖，保证逻辑的简洁，并提供简单、全面的接口。使得开发和维护过程中可以根据需求的变更快速更新。
+\end{itemize}
+
+\section {交互工作能力}
+\begin{itemize}
+	\item 产品应该以人的需求为导向，理解用户的期望和需求，应具有歌曲收听排行榜等功能。
+\end{itemize}
+
+\section {可维护性}
+\begin{itemize}
+	\item 产品的代码应有良好的缩进格式和丰富的注释，使得整个服务易于维护。
+\end{itemize}
+
+\section {可移植性}
+\begin{itemize}
+	\item 产品的网页客户端代码应使用标准的HTML5，而尽量避免使用特有的浏览器特有的API；使用响应性网页设计，从而使得在任意分辨率和任意支持HTML5的浏览器上都能正常显示。产品的本地客户端应尽可能少的使用最新的和过时的API。
+\end{itemize}
+
+\section {可靠性}
+\begin{itemize}
+	\item 服务器的数据库应支持高并发的访问，客户端应支持在离线时的正常使用（播放已下载的歌曲），而服务器应有多台，并保证失败时的failover。
+\end{itemize}
+
+\section {可重用性}
+\begin{itemize}
+	\item 产品应该可以在不同的环境和功能要求下，通过对以往的局部修改和重组，保持整体稳定性，以适应新的要求。
+\end{itemize}
+
+\section {鲁莽性}
+\begin{itemize}
+	\item 产品的客户端和服务器端应检测可能发生的错误并处理。服务器应保证前端和数据库的隔离，防止被攻击。
+\end{itemize}
+
+\section {可测试性}
+\begin{itemize}
+	\item 产品的各个代码模块应尽量减少依赖，保证可以实现单元测试
+\end{itemize}
